@@ -1,0 +1,107 @@
+
+.vidContainer{
+    background-color: rgb(20, 2, 47);
+    background-image: url(./assets/blurgif.gif);
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vidContainer:hover{
+    cursor: pointer;
+}
+
+.vidSymbol{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+    text-align: center;
+    color: white;
+}
+
+#msg{
+    font-size: medium;
+}
+
+/* Hidden file picker */
+.selectFile{
+    display: none;
+}
+
+.botonera{
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    width: 100%;
+    display: flex;
+}
+
+#volumeSliderContainer{
+    display: inline;
+    align-content: right;
+}
+
+.botonera button{
+    font-weight: bolder;
+    text-shadow: 1px 2px 2px #000;
+}
+
+#volumeSlider{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+
+
+button{
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    margin-top: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+body{
+    padding: 5%;
+}
+
+
+/* @media screen and (orientation: landscape){
+    .vidContainer{
+        min-width: 80vw;
+        width:fit-content;
+
+    }
+    summary{
+        color:red
+    }
+    #video{
+        width: 100%;
+    }
+}
+@media screen and (orientation: portrait){
+    .vidContainer{
+        max-height: 100vh;
+        width:fit-content;
+    }
+    #video{
+        width:max-content;
+        max-width: 100%;
+    }
+    summary{
+        color:blue
+    }
+} */
